@@ -1,0 +1,35 @@
+20110214 좋은 날(Good Day)
+20111129 너랑 나(You&I)
+20120511 하루 끝(Every End of the Day)
+20131008 분홍신(The red shoes)
+20131220 금요일에 만나요(Friday)
+20140516 나의 옛날이야기(Naui Yetnal Iyagi)
+20151023 스물셋(Twenty-three)
+20151023 무릎(Knees)
+20151023 푸르던(The Shower)
+20170421 팔레트(Palette)
+20170421 밤편지(Through the Night)
+20170421 이런엔딩(Ending Scene)
+20170922 잊어야 하는마음으로(With the Heart to Forget You)
+20170922 잠 못 드는 밤 비는 내리고(Sleepless rainy night)
+20181010 삐삐(BBIBBI)
+20191118 블루밍(Blueming)
++
+20191118 시간의바깥(above the time)
++
+20200506 에잇(eight)
++
+20210127 Celebrity
++
+20210325 라일락(LILAC)
+20210325 Coin
+
+16:9	(1.777~)
+3:2	(1.5)
+4:3	(1.3)
+1:1	(1)
+
+3:4	(0.75)
+2:3	(0.666~)
+9:16	(0.5625)
+비율

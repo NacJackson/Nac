@@ -1,178 +1,127 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" type="text/css" href="./main.css"/>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/imgList.js"></script>
+		<script src="js/utils.js"></script>
+		<script>
+$(document).ready(function() {
+
+	document.body.innerHTML = '';
+	var ind=0;
+	var x =  screen.width * window.devicePixelRatio;
+	var y = screen.height * window.devicePixelRatio;
+	setVideo(ind++, x/3.82,y/2.82,x/8.6, y/6.4, 1000, 8700, 0,"img/PkHframe.png",2,0,0);
+	InitialLoad();
+});
+
+window.wallpaperPropertyListener = {
+    applyUserProperties: function(pro) {
+	var vd = document.getElementById("videoPV");
+	if(pro.volume) {
+		vd.volume = pro.volume.value/100;
+	}
+	if(pro.videoSrc) {
+		var vdnum = pro.videoSrc.value;
+		vd.src = vdnum + ".webm";
+	}
+	if(pro.Theme){
+		var bgnum = pro.Theme.value;
+		switch(bgnum){
+			case 1:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingPink();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.03125,y*0.231481,x*0.270833,y*0.270833, 1000, 8700, 0,"img/PkHframe.png",1,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.03125,y*0.231481,x*0.270833,y*0.270833, 1000, 8700, 0,"img/PkHframe.png",1,pro.videoSrc.value,vd.volume);}
+				break;
+			case 2:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingBlue();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.651041,y*0.592592,x*0.333333,y*0.333333, 1000, 8700, 0,"img/BlHframe.png",3,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.651041,y*0.592592,x*0.333333,y*0.333333, 1000, 8700, 0,"img/BlHframe.png",3,pro.videoSrc.value,vd.volume);}
+				break;
+			case 3:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingBlack();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.7890625,y*0.00462963,x*0.2083333, y*0.208333, 1000, 8700, 0,"img/BkHframe.png",7,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.7890625,y*0.00462963,x*0.2083333, y*0.208333, 1000, 8700, 0,"img/BkHframe.png",7,pro.videoSrc.value,vd.volume);}
+				break;
+			case 4:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingWhite();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.04427083,y*0.3703704,x*0.2083333, y*0.208333, 1000, 8700, 0,"img/WhHframe.png",8,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.04427083,y*0.3703704,x*0.2083333, y*0.208333, 1000, 8700, 0,"img/WhHframe.png",8,pro.videoSrc.value,vd.volume);}
+				break;
+			case 5:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingCeleb();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.708984,y*0.086806,x*0.270703, y*0.270833, 1000, 8700, 0,"img/CLHframe.png",10,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.708984,y*0.086806,x*0.270703, y*0.270833, 1000, 8700, 0,"img/CLHframe.png",10,pro.videoSrc.value,vd.volume);}
+				break;
+			case 6:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingGreen();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.453488,y*0.638889,x*0.218605, y*0.29375, 1000, 8700, 0,"img/GrHframe_Video.png",5,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.453488,y*0.638889,x*0.218605, y*0.29375, 1000, 8700, 0,"img/GrHframe_Video.png",5,pro.videoSrc.value,vd.volume);}
+				break;
+			case 7:
+				document.body.innerHTML = '';
+				var ind=0;
+				var x =  screen.width * window.devicePixelRatio;
+				var y = screen.height * window.devicePixelRatio;
+				SettingCeleb21();
+				if(pro.videoloop.value==false){
+				setVideo(ind++, x*0.508721,y*0.020833,x*0.209302, y*0.28125, 1000, 8700, 0,"img/CLHframe.png",10,pro.videoSrc.value,vd.volume);}
+				else{
+				setLoopVideo(ind++, x*0.508721,y*0.020833,x*0.209302, y*0.28125, 1000, 8700, 0,"img/CLHframe.png",10,pro.videoSrc.value,vd.volume);}
+				break;
+				
+		}
+	
+	}
+
+    }
+};
+
+		</script>
+		<style>
+.img {
+	-webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+	transform: rotateX(-33.5deg) rotateY(45deg);
+}
+		</style>
 	</head>
-	<body>
-		<div id="loader" class="loader"><div class="cycle"><div class="cycle2"></div></div><div class="img"></div></div>
-		<div class="app">
-			<div class="background"></div>
-			<video class="videoground" autoplay loop></video>
-
-			<div id="clock_classic"></div>
-			<div class="screen glitch">
-			  	<div class="clock is-off"><span data-time="" class="time"></span></div>
-			</div>
-			<div class="digital_clock" id="digital_clock">
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			  <div class="digit">
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			    <div class="line"></div>
-			  </div>
-			</div>
-			<div class="column2">  
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				</div>
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				  <div class="num">3</div>
-				  <div class="num">4</div>
-				  <div class="num">5</div>
-				  <div class="num">6</div>
-				  <div class="num">7</div>
-				  <div class="num">8</div>
-				  <div class="num">9</div>
-				</div>
-				<div class="colon"></div>
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				  <div class="num">3</div>
-				  <div class="num">4</div>
-				  <div class="num">5</div>
-				</div>
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				  <div class="num">3</div>
-				  <div class="num">4</div>
-				  <div class="num">5</div>
-				  <div class="num">6</div>
-				  <div class="num">7</div>
-				  <div class="num">8</div>
-				  <div class="num">9</div>
-				</div>
-				<div class="colon showed"></div>
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				  <div class="num">3</div>
-				  <div class="num">4</div>
-				  <div class="num">5</div>
-				</div>
-				<div class="column">
-				  <div class="num">0</div>
-				  <div class="num">1</div>
-				  <div class="num">2</div>
-				  <div class="num">3</div>
-				  <div class="num">4</div>
-				  <div class="num">5</div>
-				  <div class="num">6</div>
-				  <div class="num">7</div>
-				  <div class="num">8</div>
-				  <div class="num">9</div>
-				</div>
-			</div>
-
-			<canvas id="can"></canvas>
-			<canvas id="CanLine"></canvas>
-			<canvas id="simples"></canvas>
-		</div>
-
-
-		<script src="js/lib/jquery-3.2.1.min.js"></script>
-		<script src="js/lib/jquery.backstretch.min.js"></script>
-		<script src="js/lib/Vibrant.min.js"></script>
-		<script src="js/jquery.leoweather.min.js"></script>
-		<script src="js/jquery.particles.js"></script>
-		<script src="js/jquery.audiovisualizer.js"></script>
-		<script src="js/snow_surpirze.js"></script>
-
-		<script src="module/wordsWeather.js"></script>
-		<script src="module/weather.js"></script>
-		<script src="module/date.js"></script>
-		<script src="module/note.js"></script>
-		<script src="module/spotify.js"></script>
-		<script src="module/dataCollector.js"></script>
-		<script src="module/fonts.js"></script>
-
-		<script src="js/main.js"></script>
-
-		<script src="js/loader.js"></script>
-
-		<script src="js/background.setting.js"></script>
-		<script src="js/effect_particles.setting.js"></script>
-		<script src="js/weather.setting.js"></script>
-		<script src="js/clock.setting.js"></script>
-		<script src="js/date.setting.js"></script>
-		<script src="js/visualizer_monstercat.setting.js"></script>
-		<script src="js/note.setting.js"></script>
-		<script src="js/spotify.setting.js"></script>
-
-		<script src="module/visualizer/PWLine.js"></script>
-		<script src="module/visualizer/PWCircle.js"></script>
-		<script src="module/visualizer/monsterCat.js"></script>
-
-		<script src="module/clock/main.js"></script>
-			<div class="foreground"></div>
-
+	<body style="overflow-x:hidden;overflow-y:hidden">
+	<video id="vid" src="01.webm" controls width="480" height="480">
 	</body>
 </html>
