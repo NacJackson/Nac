@@ -1,0 +1,217 @@
+[url=https://steamcommunity.com/workshop/filedetails/discussion/1509243786/2140840224668431912/]Back[/url]
+[url=https://steamcommunity.com/workshop/filedetails/discussion/1509243786/2140840224668417293/]Назад[/url]
+
+align
+slideshow
+
+
+30x15
+
+15x10
+
+30x7.5
+
+20x5
+
+
+[h1]Обновление 1.7[/h1]
+[b] - погода - [/b]
+— Теперь вы можете писать ваш текст по верх фона.
+[img] https://i.imgur.com/AqY9Z9c.gif [/img]
+
+[b] - Темная загрузка - [/b]
+— Мы сменили цвет загрузки на темный, мы заботимся о ваших глазах.
+[img] https://i.imgur.com/MQgEnMd.gif [/img]
+
+[b] - Заливка цветом - [/b]
+— Надоели картинки, хотите минимализм? Тогда используйте заливку цветом.
+[img] https://i.imgur.com/pkI4lIn.gif [/img]
+
+[b] - Передний фон - [/b]
+— Водянной знак, сложные композиции - все это и даже больше вы сможете создать благодаря использованию разных планов.
+[img] https://i.imgur.com/hd660kJ.gif [/img]
+
+[b] - Перенос строки - [/b]
+— Абсолютно в любом месте вы можете сделать перенос строки с помощью тега '{,}'.
+[img] https://i.imgur.com/ADdrezK.gif [/img]
+
+[b] - Мелкие изминения - [/b]
+— Улучшение выравнивания.
+— Исправлен баг при включение слайдшоу.
+— Есть баг при переключении на видео режим.
+
+Вы всегда можете предложить свои улучшения нам и мы обязательно прислушаемся к вам.
+
+[h1] Update 1.7 [/h1]
+[b] - The text module - [/b]
+- Now you can write your text on top of the background.
+[img] https://i.imgur.com/AqY9Z9c.gif [/img]
+
+[b] - Dark loading - [/b]
+- We changed the loading screen background color to dark, we care about your eyes.
+[img] https://i.imgur.com/MQgEnMd.gif [/img]
+
+[b] - Fill with color - [/b]
+- Tired of pictures, want minimalism? Use the fill color.
+[img] https://i.imgur.com/pkI4lIn.gif [/img]
+
+[b] - Foreground - [/b]
+- Watermark, complex compositions - all this and even more you can create through the use of different plans.
+[img] https://i.imgur.com/hd660kJ.gif [/img]
+
+[b] - Line Wrap - [/b]
+- Absolutely anywhere you can do a line break using the tag '{,}'.
+[img] https://i.imgur.com/ADdrezK.gif [/img]
+
+[b] - Minor changes - [/b]
+- Improved alignment.
+- Fixed a bug when turning on the slideshow.
+- There is a bug when switching to video mode.
+
+You can always offer your improvements to us and we will certainly listen to you.
+
+Font
+FontDir
+Alignment
+ColorType
+[
+	Color,
+	SpotifyPrimal,
+	SpotifyLight,
+	SpotifyDark,
+	SpotifyDarkness,
+]
+Color
+ColorBlurType
+[
+	Color,
+	SpotifyPrimal,
+	SpotifyLight,
+	SpotifyDark,
+	SpotifyDarkness,
+]
+ColorBlur
+Size (10-60)
+Transparency
+X
+Y
+
+7000
+
+7990	
+
+8010	spotifyEnable
+8020	spotifyToken
+8030	
+8040	spotifyImg
+8050	spotifyImgSize
+8060	spotifyImgTransparency
+8070	spotifyImgX
+8080	spotifyImgY
+8090	spotifyImgBlur
+8100	spotifyImgProtect
+
+8110	spotifyLabel
+8120	spotifyLabelFont
+8130	spotifyLabelFontDir
+8140	spotifyLabelAlignment
+8150	spotifyLabelColorType
+8160	spotifyLabelColor
+8170	spotifyLabelColorBlurType
+8180	spotifyLabelColorBlur
+8190	spotifyLabelSize
+8200	spotifyLabelTransparency
+8210	spotifyLabelX
+8220	spotifyLabelY
+
+8230	spotifyArtist
+8240	spotifyArtistFont
+8250	spotifyArtistFontDir
+8260	spotifyArtistAlignment
+8270	spotifyArtistColorType
+8280	spotifyArtistColor
+8290	spotifyArtistColorBlurType
+8300	spotifyArtistColorBlur
+8310	spotifyArtistSize
+8320	spotifyArtistTransparency
+8330	spotifyArtistX
+8340	spotifyArtistY
+
+8350	spotifyProgress
+8360	spotifyProgressFont
+8370	spotifyProgressFontDir
+8380	spotifyProgressAlignment
+8390	spotifyProgressColorType
+8400	spotifyProgressColor
+8410	spotifyProgressColorBlurType
+8420	spotifyProgressColorBlur
+8430	spotifyProgressSize
+8440	spotifyProgressTransparency
+8450	spotifyProgressX
+8460	spotifyProgressY
+
+8470	spotifyDuration
+8480	spotifyDurationFont
+8490	spotifyDurationFontDir
+8500	spotifyDurationAlignment
+8510	spotifyDurationColorType
+8520	spotifyDurationColor
+8530	spotifyDurationColorBlurType
+8540	spotifyDurationColorBlur
+8550	spotifyDurationSize
+8560	spotifyDurationTransparency
+8570	spotifyDurationX
+8580	spotifyDurationY
+
+8590	spotifyLine
+8600	spotifyLineWidth
+8610	spotifyLineHeight
+8620	spotifyLineRadius
+8630	spotifyLineColorLineType
+8640	spotifyLineColorLine
+8650	spotifyLineColorType
+8660	spotifyLineColor
+8670	spotifyLineColorBlurType
+8680	spotifyLineColorBlur
+8690	spotifyLineTransparency
+8700	spotifyLineX
+8710	spotifyLineY
+
+
+8790	noteShow
+8800	noteInner
+8810	noteFont
+8820	noteFontDir
+8830	noteAlignment
+8840	noteColorType
+8850	noteColor
+8860	noteColorBlurType
+8870	noteColorBlur
+8880	noteSize
+8890	noteTransparency
+8900	noteX
+8910	noteY
+
+
+8990	weather_show
+9000	weather_ApiKey
+9010	weatherApiKeySecondary
+9020	weatherApiText
+9030	weatherSlowUpdate
+9040	weather_CityText
+9050	weatherText2
+9060	weather_Format
+9070	weatherText3
+9080	weather_units
+9090	weatherFont
+9100	weatherFontDir
+9110	weather_Alignment
+9120	weatherColorType
+9130	weather_Color
+9140	weatherColorBlurType
+9150	weather_BlurColor
+9160	weather_size
+9170	weather_timetransparency
+9180	weatherX
+9190	weatherY
+10000	AuthorInformation
